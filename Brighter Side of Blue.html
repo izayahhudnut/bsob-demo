@@ -45,10 +45,9 @@
     background:linear-gradient(to bottom,rgba(0,0,0,.92),rgba(0,0,0,.55) 70%,rgba(0,0,0,0));
     backdrop-filter:blur(8px);
   }
-  .nav-brand{display:flex;align-items:center;gap:12px}
-  .nav-brand img{height:38px;width:38px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(45,131,255,.35))}
-  .nav-brand .wordmark{font-family:"Oswald",sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;line-height:1.1}
-  .nav-brand .wordmark small{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.28em;color:var(--muted);font-weight:400;margin-top:3px}
+  .nav-brand{display:flex;align-items:center;gap:16px}
+  .nav-brand img{height:72px;width:72px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(45,131,255,.35))}
+  .nav-brand .tagline{display:block;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.13em;color:var(--muted);font-weight:400;max-width:320px;line-height:1.35}
   .nav-links{display:flex;gap:30px;font-size:13px;font-weight:500;letter-spacing:.02em}
   .nav-links a{position:relative;padding:6px 0;color:#cfd5e2;transition:color .2s}
   .nav-links a:hover{color:#fff}
@@ -465,7 +464,9 @@
   @media (max-width:600px){
     .hero,.wrap{padding-left:20px;padding-right:20px}
     .nav{padding:14px 20px;align-items:flex-start}
-    .nav-brand .wordmark{font-size:12px}
+    .nav-brand{gap:12px}
+    .nav-brand img{height:54px;width:54px}
+    .nav-brand .tagline{font-size:9px;max-width:210px}
     .nav-cta .btn{display:none}
     .hero{min-height:auto;padding-top:132px;padding-bottom:92px}
     .hero h1{font-size:clamp(52px,16vw,64px);line-height:.9}
@@ -475,6 +476,7 @@
     .section-head{margin-bottom:34px}
     .section-head h2{font-size:clamp(38px,13vw,56px)}
     .about,.pillars,.team,.episodes,.community{padding:90px 0}
+    .about-img-stack .tag{display:none}
     .about-img-stack .b{right:12px;bottom:12px;border-width:5px}
     .pillar-grid{grid-template-columns:1fr}
     .pillar{min-height:auto;grid-template-rows:auto}
@@ -503,7 +505,7 @@
 <nav class="nav" data-screen-label="Nav">
   <div class="nav-brand">
     <img src="assets/logo.png" alt="The Brighter Side of Blue" />
-    <div class="wordmark">The Brighter Side<br/>of Blue<small>STL · EST 2023</small></div>
+    <div class="tagline">Beyond the Headlines from Behind the Badge</div>
   </div>
   <div class="nav-links">
     <a href="#about">About</a>
@@ -526,7 +528,7 @@
     <div class="hero-left">
       <h1>
         Real Stories from the<br/>
-        <span class="accent">Other Side</span> of Blue<span style="color:var(--blue-electric)">.</span>
+        <span class="accent">Brighter Side</span> of Blue<span style="color:var(--blue-electric)">.</span>
       </h1>
       <p class="hero-sub">
         A St. Louis podcast hosted by retired and active officers, sharing the cases, characters, and conversations
@@ -646,19 +648,19 @@
 
     <div class="team-grid">
       <article class="team-card">
-        <div class="team-photo"><img src="uploads/image (1) 1.png" alt="JJ Joyner"/></div>
+        <div class="team-photo"><img src="uploads/image (1) 1.png" alt="Danny Howard"/></div>
         <div class="team-meta">
           <div class="role">Lieutenant</div>
-          <div class="name">Jim "JJ" Joyner</div>
+          <div class="name">Danny Howard</div>
           <div class="dept">SLMPD</div>
         </div>
       </article>
 
       <article class="team-card">
-        <div class="team-photo"><img src="uploads/image 1.png" alt="Danny Howard"/></div>
+        <div class="team-photo"><img src="uploads/image 1.png" alt="JJ Joyner"/></div>
         <div class="team-meta">
           <div class="role">Retired Major</div>
-          <div class="name">Danny Howard</div>
+          <div class="name">Jim "JJ" Joyner</div>
           <div class="dept">St. Louis Metropolitan Police Department</div>
         </div>
       </article>
